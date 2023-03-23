@@ -69,7 +69,7 @@ h1 {
     color:white;
     font-weight: bold;
 }
-  #section01 {background: url('resources/fundal2.jpg') center center / cover no-repeat;
+  #section01 {background: url('fundal2.jpg') center center / cover no-repeat;
     }
     .layer {
       background-color: rgba(15, 15, 14, 0.404);
