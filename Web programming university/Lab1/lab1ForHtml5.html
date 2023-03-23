@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Formular</title>
+</head>
+<body >
+	<h1 >Formular card de fidelitate C&#259;rture&#351;ti</h1>
+	
+	<form method="GET" action=action.php>
+		<table>
+		<tr>
+			<td><img src="logo.png" alt="Logo"></td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+				<tr>
+				<th colspan="2">Date personale</th>
+				</tr>
+				<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="firstname" maxlength="15"></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lastname"></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td>Phone:</td>
+					<td><input type="text" name="phone"></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender" value="Other">Other<br></td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			<tr>
+				<td>
+				<table>
+					<tr>
+					<th colspan="2">Date livrare*</th>
+					</tr>
+					<tr>
+					<td>&#354;ar&#259;:</td>
+					<td><input type="text" name="tara" value="Romania" readonly></td>
+					</tr>
+					<tr>
+					<td>Jude&#355;:</td>
+					<td><input type="text" name="judet"></td>
+					</tr>
+					<tr>
+					<td>Ora&#351;:</td>
+					<td><input type="text" name="oras"></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Adres&#259;:</td>
+						<td><input type="text" name="adresa1" maxlength="15">&lt;-Strad&#259;<br>
+							<input type="text" name="numar">&lt;-Num&#259;r
+						</td>
+					</tr>
+					<tr>
+						<td><input type="text" name="adresa2" maxlength="15"></td>
+					</tr>
+					<tr>
+						<td>Cod po&#351;tal:</td>
+						<td><input type="text" name="codpostal" size=5></td>
+					</tr>
+					<tr>
+					<td colspan="2">*Adres&#259; de livrare <b>op&#355;ional&#259;</b>, in caz c&#259; se dore&#351;te achizi&#355;ionarea de produse din magazin</td>
+					</tr>
+				</table></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<fieldset>
+					<legend><b>Condi&#355;ii livrare</b></legend>
+					<ol type="i">
+					<li><strong>Livrare gratuit&#259;</strong> pentru comenzi peste 150 de lei dac&#259; toate produsele pot fi livrate &#238;ntr-un singur colet.
+					<li>Dac&#259; ai nevoie de livrare în aceea&#351;i zi, în Bucure&#351;ti, po&#355;i opta pentru serviciile noastre care au următoarele tarife:
+						<ul>
+							<li>19.90 lei, Same Day Fan Courier - numai pentru produsele cu etichet&#259; 24h &#351;i pentru comenzile plasate p&#226;n&#259; în ora 13:30
+							<li>19.90 lei, Sinapseria - livrare cu bicicleta - numai pentru produsele cu etichet&#259; 24h &#351;i pentru comenzile plasate p&#226;n&#259; în ora 13:30
+							<li>19.90 lei, Bookurier- numai pentru produsele cu etichet&#259; 24h &#351;i pentru comenzile plasate p&#226;n&#259; &#238;n ora 13:30
+						</ul>
+					<li><strong>Metode de plat&#259;</strong>
+						<ol type="A">
+							<li>Plat&#259; online cu cardul
+							<li>Plat&#259; ramburs
+							<li>Plat&#259; cu cardul cultural sau cardul cadou
+							<li>Plat&#259; prin OP
+						</ol>
+				</ol>
+				</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<fieldset>
+					<legend><b>Hai sa ne cunoastem!</b><img src="cute.png" height=50 alt="cute"></legend>
+					<div class="cunoastere">
+						<p>Ajut&#259;-ne s&#259; i&#355;i cunoa&#351;tem gusturile &#351;i vei fi recompensat!</p>
+						<ol type="1" start=101>
+							<li>Care este hobby-ul preferat?
+							<li>Ce gen literar preferi?
+							<li>Ai arti&#351;ti/benzi preferate?<br>
+							<textarea name="message" rows="5" cols="15">Preferatul meu este...</textarea>
+							<li>Cele mai des cump&#259;rate produse de la noi?<br>
+								<input type="checkbox" name="carti">C&#259;rti<br>
+								<input type="checkbox" name="ceai" checked>Ceai<br>
+								<input type="checkbox" name="jocuri">Jocuri<br>
+								<input type="checkbox" name="muzica">Muzic&#259;<br>
+							<li>De ziua ta prime&#351;ti un cadou de la noi!<br>
+								zz/ll/aa: <input type="text" name="birthday"><br>
+							<li>Dore&#351;ti s&#259; te abonezi la Newslatter pentru noi oferte?<br>
+								<select name="answer" multiple>
+								<option value="da" selected>Da</option> <option value="nu">Nu</option><option value="later">Mai t&#226;rziu :)</option>
+								</select> <br>
+						</ol>
+					</div>
+					<a href="https://carturesti.ro" target="_blank"><strong>Acceseaz&#259; magazinul! Sau contacteaz&#259;-ne!<br><br></strong></a><input type="text" name="contact" disabled>
+				</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
